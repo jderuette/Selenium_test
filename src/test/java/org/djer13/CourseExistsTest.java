@@ -28,6 +28,7 @@ public class CourseExistsTest {
 
     @Before
     public void setUp() {
+        System.setProperty("webdriver.gecko.driver", "D:\\program\\geckoDriver_026\\geckodriver.exe");
         driver = new FirefoxDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
